@@ -27,23 +27,26 @@ Install dependencies for both frontend and backend:
 
 bash
 Copy code
+
 # Install server dependencies
+
 cd server
 npm install
 
 # Install client dependencies
+
 cd ../client
 npm install
 Set up environment variables:
 
-Create a .env file in the server directory with the following variables:
+Create a .env file in the api directory with the following variables:
 
 plaintext
 Copy code
 PORT=4040
 MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-CORS_ORIGIN=http://localhost:3000  # Adjust according to your frontend URL
+CORS_ORIGIN=http://localhost:5173 # Adjust according to your frontend URL
 ALLOW_CREDENTIALS=true
 Replace your_mongodb_connection_string with your MongoDB connection string and your_jwt_secret with your JWT secret key.
 
@@ -51,13 +54,16 @@ Run the application:
 
 bash
 Copy code
+
 # Start the server (from the server directory)
-cd ../api
-npm run dev
+
+cd ../server
+npm start
 
 # Start the client (from the client directory)
+
 cd ../client
-npm run dev
+npm start
 Access the application:
 
 Open your browser and go to http://localhost:5173 to use WhisperHub.
