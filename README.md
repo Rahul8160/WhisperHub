@@ -21,7 +21,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/whisperhub.git
+git clone https://github.com/Rahul8160/whisperhub.git
 cd whisperhub
 Install dependencies for both frontend and backend:
 
